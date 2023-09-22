@@ -9,20 +9,31 @@ import { FormsModule } from '@angular/forms';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { HomeComponent } from './rt/home/home.component';
 import { FlashComponent } from './rt/flash/flash.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './rt/navbar/navbar.component';
+import {MatToolbarModule, } from '@angular/material/toolbar';
+import {MatButtonModule, } from '@angular/material/button';
+import {MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RtComponent,
     HomeComponent,
-    FlashComponent
+    FlashComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserModule, 
     FormsModule,
-    LightgalleryModule
+    LightgalleryModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

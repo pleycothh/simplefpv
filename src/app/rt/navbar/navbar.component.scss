@@ -1,0 +1,18 @@
+.mat-toolbar {
+    
+    .spacer {
+        margin-left: 10%;
+      //  display: flex; // Use flexbox
+      //  justify-content: center; // Center content horizontally
+       // align-items: center; // Center content vertically
+      //  gap: 2px; // Add some space between the links
+        a {
+            text-decoration: none;
+            color: white; // Change link text color to white or your desired color
+        }
+        .about{
+            margin-left: 10%;
+        }
+    }
+  }
+  
