@@ -4,11 +4,21 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
 @angular/router
 MIT
+
+lightgallery
+GPLv3
+
+lightgallery/angular
+
+lightgallery/plugins/zoom
 
 rxjs
 Apache-2.0
