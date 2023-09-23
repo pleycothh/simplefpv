@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Routes, RouterModule} from '@angular/router';
 import { RtComponent } from './rt.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { FlashComponent } from './flash/flash.component';
+import { NewsComponent } from './news/news.component';
+import { GuidComponent } from './guid/guid.component';
+import { BuildComponent } from './build/build.component';
+import { BuyComponent } from './buy/buy.component';
 
 const routes: Routes = [
   {
@@ -13,8 +15,12 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'flash', component: FlashComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'news', component: NewsComponent },
+      { path: 'guid', component: GuidComponent },
+      { path: 'build', component: BuildComponent },
+      { path: 'buy', component: BuyComponent },
+      { path: 'about', component: AboutComponent },
+
     ]
   }
 ];

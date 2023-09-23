@@ -10,8 +10,13 @@ import {MatIconModule } from '@angular/material/icon';
 import { RtComponent } from './rt.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { FlashComponent } from './flash/flash.component';
+import { FlashComponent } from './home/flash/flash.component';
 import { RtRoutingModule } from './rt-routing.module';
+import { SharedComponent } from './shared/shared.component';
+import { NewsComponent } from './news/news.component';
+import { GuidComponent } from './guid/guid.component';
+import { BuildComponent } from './build/build.component';
+import { BuyComponent } from './buy/buy.component';
 
 @NgModule({
 
@@ -30,7 +35,12 @@ import { RtRoutingModule } from './rt-routing.module';
     
     NavbarComponent,
     HomeComponent,
-    FlashComponent
+    FlashComponent,
+    SharedComponent,
+    NewsComponent,
+    GuidComponent,
+    BuildComponent,
+    BuyComponent
   ],
   exports: [],
   bootstrap: []

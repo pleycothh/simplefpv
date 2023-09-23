@@ -1,16 +1,20 @@
-<mat-toolbar
-    color="primary"
-    class="mat-elevation-z16"
->
-<span><span class="material-icons">smart_toy</span> Simple FPV</span>
+<div>
+    <mat-toolbar color="primary" class="mat-elevation-z16">
 
-<div class="spacer">
-    <a mat-button>Get Start</a>
-    <a mat-button>Free Style</a>
-    <a mat-button>Long Range</a>
-    <a mat-button>Racing</a>
-    <a mat-button>Wings</a>
-    <a mat-button routerLink="about" class="about">About</a>
+    <a mat-button routerLink="home" ><span class="material-icons">smart_toy</span> Simple FPV</a>
+
+    <div class="left">
+        <a mat-button routerLink="news">News</a>
+        <a mat-button routerLink="guid" >Guid</a>
+        <a mat-button routerLink="build" >Builds</a>
+        <a mat-button routerLink="buy" >Buy</a>
+        <a mat-button routerLink="about" class="about">About</a>
+    </div>
+
+    <div class="right">
+        <a mat-button routerLink="login" >Login/Logon</a>
+        <a mat-button routerLink="home" ><span class="material-icons">smart_toy</span>Github</a>
+    </div>
+
+    </mat-toolbar>
 </div>
-
-</mat-toolbar>
