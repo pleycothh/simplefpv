@@ -7,6 +7,8 @@ import { NewsComponent } from './news/news.component';
 import { GuidComponent } from './guid/guid.component';
 import { BuildComponent } from './build/build.component';
 import { BuyComponent } from './buy/buy.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AdminComponent } from '../admin/admin.component';
 
 const routes: Routes = [
   {
@@ -15,11 +17,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'news', component: NewsComponent },
+      { path: 'gallery', component: GalleryComponent },
       { path: 'guid', component: GuidComponent },
       { path: 'build', component: BuildComponent },
       { path: 'buy', component: BuyComponent },
-      { path: 'about', component: AboutComponent },
+      { path: 'about', component: AboutComponent }
 
     ]
   }

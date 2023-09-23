@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AdminComponent {
 
+  constructor(private router: Router) {}
+
+  goToHomePage() {
+    this.router.navigate(['/home']);
+  }
+
+  // TODO: 
+  // manage user setting
+  // personal config page
+  // manage user account
 }

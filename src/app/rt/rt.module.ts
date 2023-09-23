@@ -20,6 +20,8 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryLightComponent } from './gallery/gallery-light/gallery-light.component';
 
 @NgModule({
 
@@ -52,7 +54,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     GuidComponent,
     BuildComponent,
     BuyComponent,
-    MainNavComponent
+    MainNavComponent,
+    GalleryComponent,
+    GalleryLightComponent
   ],
   exports: [],
   bootstrap: []
