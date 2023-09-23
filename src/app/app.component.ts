@@ -7,7 +7,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-  constructor( private titleService: Title) {
+  constructor( 
+    private titleService: Title) {
     
     this.titleService.setTitle("Simple FPV")
   }

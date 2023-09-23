@@ -2,38 +2,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RtComponent } from './rt/rt.component';
-
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { LightgalleryModule } from 'lightgallery/angular';
-import { HomeComponent } from './rt/home/home.component';
-import { FlashComponent } from './rt/flash/flash.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './rt/navbar/navbar.component';
-import {MatToolbarModule, } from '@angular/material/toolbar';
-import {MatButtonModule, } from '@angular/material/button';
-import {MatIconModule } from '@angular/material/icon';
 
+import { RtModule } from './rt/rt.module';
+import { RtRoutingModule } from './rt/rt-routing.module';
+import { AdminComponent } from './admin/admin.component';
+import { McComponent } from './mc/mc.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RtComponent,
-    HomeComponent,
-    FlashComponent,
-    NavbarComponent
+    AdminComponent,
+    McComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule, 
-    FormsModule,
-    LightgalleryModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule
+    RtModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
