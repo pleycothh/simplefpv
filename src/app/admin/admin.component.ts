@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 @Component({
   selector: 'app-admin',

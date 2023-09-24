@@ -10,23 +10,22 @@ import { McComponent } from './mc/mc.component';
 import { AdminModule } from './admin/admin.module';
 
 import { CommonModule } from '@angular/common';
-import { NbCardModule } from '@nebular/theme';
+import { NbCardModule, NbStatusService } from '@nebular/theme';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
     McComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RtModule,
     AdminModule,
-    CommonModule, 
-    NbCardModule
+    
+    
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
