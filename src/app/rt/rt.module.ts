@@ -12,7 +12,6 @@ import { GuidComponent } from './guid/guid.component';
 import { BuildComponent } from './build/build.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { GalleryLightComponent } from './gallery/gallery-light/gallery-light.component';
 import { StoreComponent } from './store/store.component';
 import { SharingModule } from '../sharing/sharing.module';
 import { CartComponent } from './store/cart/cart.component';
@@ -35,6 +34,9 @@ import { FiltersComponent } from './store/components/filters/filters.component';
 import { ProductBoxComponent } from './store/components/product-box/product-box.component';
 import { ProductsHeaderComponent } from './store/components/products-header/products-header.component';
 import { HeaderComponent } from './store/components/header/header.component';
+import { GalleryMainComponent } from './gallery/gallery-main/gallery-main.component';
+import { GalleryDetailsComponent } from './gallery/gallery-details/gallery-details.component';
+import { GallerySearchComponent } from './gallery/gallery-search/gallery-search.component';
 
 @NgModule({
 
@@ -76,7 +78,6 @@ import { HeaderComponent } from './store/components/header/header.component';
     BuildComponent,
     MainNavComponent,
     GalleryComponent,
-    GalleryLightComponent,
     
     // Store
     StoreComponent,
@@ -84,7 +85,10 @@ import { HeaderComponent } from './store/components/header/header.component';
     FiltersComponent,
     ProductBoxComponent,
     ProductsHeaderComponent,
-    HeaderComponent
+    HeaderComponent,
+    GalleryMainComponent,
+    GalleryDetailsComponent,
+    GallerySearchComponent
   ],
   exports: [],
   bootstrap: []
