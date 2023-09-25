@@ -3,12 +3,11 @@ import { Routes, RouterModule} from '@angular/router';
 import { RtComponent } from './rt.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-import { NewsComponent } from './news/news.component';
 import { GuidComponent } from './guid/guid.component';
 import { BuildComponent } from './build/build.component';
-import { BuyComponent } from './buy/buy.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { AdminComponent } from '../admin/admin.component';
+import { StoreComponent } from './store/store.component';
+import { CartComponent } from './store/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -20,7 +19,18 @@ const routes: Routes = [
       { path: 'gallery', component: GalleryComponent },
       { path: 'guid', component: GuidComponent },
       { path: 'build', component: BuildComponent },
-      { path: 'buy', component: BuyComponent },
+      { path: 'store',
+        children: [
+          {
+            path: '',
+            component: StoreComponent,
+          },
+          {
+            path: 'cart',
+            component: CartComponent,
+          },
+          { path: '', redirectTo: 'home', pathMatch: 'full' },
+        ]},
       { path: 'about', component: AboutComponent }
 
     ]

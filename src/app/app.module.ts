@@ -9,6 +9,8 @@ import { RtRoutingModule } from './rt/rt-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { McComponent } from './mc/mc.component';
 import { AdminModule } from './admin/admin.module';
+import { SharingModule } from './sharing/sharing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AdminModule } from './admin/admin.module';
     AppRoutingModule,
     RtModule,
     AdminModule,
+    SharingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
