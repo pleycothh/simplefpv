@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { GuidComponent } from './guid/guid.component';
 import { BuildComponent } from './build/build.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryDetailsComponent } from './gallery/gallery-details/gallery-details.component';
 import { StoreComponent } from './store/store.component';
 import { CartComponent } from './store/cart/cart.component';
 
@@ -16,7 +17,12 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'gallery', component: GalleryComponent },
+      { path: 'gallery',
+        children: [
+          {path:'',component: GalleryComponent},
+          {path:':id',component: GalleryDetailsComponent}
+        ]
+      },
       { path: 'guid', component: GuidComponent },
       { path: 'build', component: BuildComponent },
       { path: 'store',
