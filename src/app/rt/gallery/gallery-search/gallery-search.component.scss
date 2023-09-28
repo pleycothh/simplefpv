@@ -21,6 +21,12 @@ h5
 }
 
 .contain {
-    background-color: #000000;
+    //background-color: #000000;
     height: 70px;
   }
+
+.row{
+// center
+margin-left: 4em;
+display: flex;
+}

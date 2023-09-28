@@ -5,8 +5,8 @@
 
 .carousel-inner .carousel-item img
 {
-    height: 700px;
-    object-fit: cover;
+    height: 860px;
+   // object-fit: cover;
 }
 
 .carousel-caption h2
@@ -18,7 +18,7 @@
 
 .carousel-caption p 
 {
-    //color: #ffffff;
+    color: #ffffff;
 }
 
 .rowposter{
@@ -50,4 +50,8 @@
 .rowposter::-webkit-scrollbar
 {
     display: none;
+}
+
+.gallary-main{
+    background-color: #000000 !important;
 }
