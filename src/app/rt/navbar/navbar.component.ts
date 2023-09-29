@@ -1,11 +1,14 @@
-import { Component, inject } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+  log(){
+    console.log("navbar");
+  }
 
 }
